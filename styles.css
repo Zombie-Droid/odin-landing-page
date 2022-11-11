@@ -1,3 +1,35 @@
 body {
     font-family: 'Fira Code Medium',Consolas,'Courier New',sans-serif;
 }
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.intro {
+    display: flex;
+}
+
+.copy {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro>img{
+    flex-shrink: 0;
+    margin: 100px;
+}
+
+button {
+    width: max-content;
+    flex-basis: 0;
+}
