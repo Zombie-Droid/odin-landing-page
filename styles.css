@@ -1,5 +1,7 @@
 body {
     font-family: 'Fira Code Medium',Consolas,'Courier New',sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
@@ -8,14 +10,32 @@ ul {
     list-style: none;
 }
 
+button {
+    width: max-content;
+    flex-basis: 0;
+}
+
 .links {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 30px;
+}
+
+.header {
+    padding: 30px;
+    color: #F9FAF8;
+    justify-content: space-between;
+}
+
+.header,
+.intro {
+    background-color: #1F2937;
+    border: 0;
 }
 
 .intro {
     display: flex;
+
 }
 
 .copy {
@@ -24,12 +44,39 @@ ul {
     flex-direction: column;
     justify-content: center;
 }
+.copy>h1{
+    color: #F9FAF8;
+}
+.copy>p{
+    color: #E5E7EB;
+}
 .intro>img{
     flex-shrink: 0;
     margin: 100px;
 }
-
-button {
-    width: max-content;
-    flex-basis: 0;
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.footer{
+    align-self: center;
+}
+.quote{
+    background-color: #E5E7EB;
+    color: #1F2937;
+    width: 50vw;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+.quote>h3{
+    flex-shrink: 0;
 }
